@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <title>Blog Website</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <section class="navigation">
+      <a class="bar-button" href="#"><span class="fa fa-facebook-official"></span></a>
+      <a class="bar-button" href="#"><span class="fa fa-instagram"></span></a>
+      <a class="bar-button" href="#"><span class="fa fa-snapchat"></span></a>
+      <a class="bar-button" href="#"><span class="fa fa-twitter"></span></a>
+      <a class="bar-button" href="#"><span class="fa fa-linkedin"></span></a>
+      <a class="bar-button search" href="#"><span class="fa fa-search"></span></a>
+    </section>
+    <div class="container">
+      <div class="content">
+        <p class="main-caption">#Bloglife</p>
+        <p class="large">Welcome to the world of<span class="tag">blogs</span></p>
+      </div>
+      <div class="main">
+        <img src="img/header.png">
+        <div class="main-photo-caption">
+          <p class="main-name">gaganjot's</p>
+          <p class="main-blog">Blog</p>
+          <button onclick=show() class="main-btn" type="button">Subscribe</button>
+        </div>
+      </div>
+      <div onclick=hide() class="subscribe-col subscribe-show" id="myDIV">
+        <div class="subscribe">
+            <div class="subscribe-close">
+                <button class="subscribe-btn-close fa fa-remove"></button>
+                <h3>Subscribe</h3>
+            </div>
+            <div class="subscribe-update">
+                <p>Join my mailing list to receive updates on the latest blog posts and other things.</p>
+                <form action="#" method="post">
+                    <input id="email" type="email" name="email" placeholder="Enter e-mail" required><br>
+                    <button class="button block red" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="blog-container" id="main">
+    <div class="blog-content">
+      <section class="left">
+        <article class="left-art1">
+          <div class="title-blog">
+            <header>
+              <h2>Title heading</h2>
+              <p>Title description, <time>2024-07-19 9:15</time></p>
+            </header>
+            <picture>
+              <img src="img/img2.png">
+            </picture>
+            <div class="descrip">
+              <p>Black lives matter NGO, greenwashing energize, B-corp replicable fairness. Catalyze social return on investment impact investing we must stand up efficient grit. Incubator, black lives matter challenges and opportunities citizen-centered outcomes. Program area, thought provoking thought partnership sustainable relief strategy impact social return on investment. Cultivate, movements, a progress social.</p>
+              <p>Inspire thought partnership challenges and opportunities change-makers green space LGBTQ+ B-corp inspire. Thought partnership; mass incarceration collaborative consumption milestones systems.</p>
+            </div>
+            <div class="blog-btn">
+              <button class="btn"><span class="fa fa-thumbs-up"></span> <span>Like</span></button>
+              <button onclick=showReply() class="btn reply-btn"><span>Replies</span> <span class="reply-no">1</span></button>
+            </div>
+            <hr>
+            <div class="repl-modal">
+              <div class="repl-section reply-show">
+                <div class="left">
+                  <img src="img/person1.avif">
+                </div>
+                <div class="right">
+                  <p><span class="name">George  </span><time>2024-07-19 9:15</time></p>
+                  <p>Great blog post! Following</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="left-art1">
+          <div class="title-blog">
+            <header>
+              <h2>Title heading</h2>
+              <p>Title description, <time>2024-07-19 9:15</time></p>
+            </header>
+            <picture>
+              <img src="img/img3.png">
+            </picture>
+            <div class="descrip">
+              <p>Black lives matter NGO, greenwashing energize, B-corp replicable fairness. Catalyze social return on investment impact investing we must stand up efficient grit. Incubator, black lives matter challenges and opportunities citizen-centered outcomes. Program area, thought provoking thought partnership sustainable relief strategy impact social return on investment. Cultivate, movements, a progress social.</p>
+              <p>Inspire thought partnership challenges and opportunities change-makers green space LGBTQ+ B-corp inspire. Thought partnership; mass incarceration collaborative consumption milestones systems.</p>
+            </div>
+            <div class="blog-btn">
+              <button class="btn"><span class="fa fa-thumbs-up"></span> <span>Like</span></button>
+              <button onclick=showReply2() class="btn reply-btn"><span>Replies</span> <span class="reply-no">1</span></button>
+            </div>
+            <hr>
+            <div class="repl-modal">
+              <div class="repl-section reply-show2">
+                <div class="left">
+                  <img src="img/person1.avif">
+                </div>
+                <div class="right">
+                  <p><span class="name">George  </span><time>2024-07-19 9:15</time></p>
+                  <p>Great blog post! Following</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="left-art1">
+          <div class="title-blog">
+            <header>
+              <h2>Title heading</h2>
+              <p>Title description, <time>2024-07-19 9:15</time></p>
+            </header>
+            <picture>
+              <img src="img/img4.png">
+            </picture>
+            <div class="descrip">
+              <p>Black lives matter NGO, greenwashing energize, B-corp replicable fairness. Catalyze social return on investment impact investing we must stand up efficient grit. Incubator, black lives matter challenges and opportunities citizen-centered outcomes. Program area, thought provoking thought partnership sustainable relief strategy impact social return on investment. Cultivate, movements, a progress social.</p>
+              <p>Inspire thought partnership challenges and opportunities change-makers green space LGBTQ+ B-corp inspire. Thought partnership; mass incarceration collaborative consumption milestones systems.</p>
+            </div>
+            <div class="blog-btn">
+              <button class="btn"><span class="fa fa-thumbs-up"></span> <span>Like</span></button>
+              <button onclick=showReply3() class="btn reply-btn"><span>Replies</span> <span class="reply-no">1</span></button>
+            </div>
+            <hr>
+            <div class="repl-modal">
+              <div class="repl-section reply-show3">
+                <div class="left">
+                  <img src="img/person1.avif">
+                </div>
+                <div class="right">
+                  <p><span class="name">George  </span><time>2024-07-19 9:15</time></p>
+                  <p>Great blog post! Following</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <section class="right">
+          <div class="name">
+            <div class="img-cont"><img class="name-img" src="img/img6.png"><hr></div>
+            <div class="about-me">
+              <h3>Gaganjot Kaur</h3>
+              <p>Just me, myself and I, exploring the universe of uknownment. I want to share my world with you. I have a interest of lorem ipsum and mauris neque quam blog.</p>
+            </div>
+          </div>
+          <div class="popular-post">
+            <div class="same-title">
+              <h2>Popular Posts</h2>
+            </div>
+            <ul>
+              <li class="post-block">
+                <a href="#">
+                  <div>
+                    <img src="img/plant.webp">
+                  </div>
+                  <div class="text">
+                    <h3>Plant</h3>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                </a>
+                <hr>
+              </li>
+              <li class="post-block">
+                <a href="#">
+                  <div>
+                    <img src="img/sea.avif">
+                  </div>
+                  <div class="text">
+                    <h3>Sea</h3>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                </a>
+                <hr>
+              </li>
+              <li class="post-block">
+                <a href="#">
+                  <div>
+                    <img src="img/nature.avif">
+                  </div>
+                  <div class="text">
+                    <h3>Nature</h3>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                </a>
+                <hr>
+              </li>
+              <li class="post-block">
+                <a href="#">
+                  <div>
+                    <img src="img/earth.avif">
+                  </div>
+                  <div class="text">
+                    <h3>Earth</h3>
+                    <p>Lorem, ipsum dolor.</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="follow-links">
+            <div class="same-title">
+              <h2>Follow Me</h2>
+            </div>
+            <div class="bar-icon">
+              <a href="#"><span class="fa fa-facebook-official"></span></a>
+              <a href="#"><span class="fa fa-instagram"></span></a>
+              <a href="#"><span class="fa fa-snapchat"></span></a>
+              <a href="#"><span class="fa fa-twitter"></span></a>
+              <a href="#"><span class="fa fa-flickr"></span></a>
+              <a href="#"><span class="fa fa-linkedin"></span></a>
+            </div>
+          </div>
+          <!-- <div class="subscribe">
+            <div class="subs-cont">
+              <h2>Subscribe</h2>
+            </div>
+            <div class="container">
+              <p>Enter your e-mail below and get notified on the latest blog posts.</p>
+              <form action="#" method="post">
+                <label class="visually-hidden" for="email-2">Enter e-mail</label>
+                <div class="padding-16">
+                  <input class="input border" id="email-2" type="email" name="email-2" placeholder="Enter e-mail" required>
+                </div>
+                <footer class="padding-16">
+                  <button class="button block red" type="submit">Subscribe</button>
+                </footer>
+              </form>
+            </div>
+          </div> -->
+      </section>
+    </div>
+    <div class="blog-top">
+      <a class="top-btn" href="index.html"><span class="fa fa-arrow-up"></span> To the top</a>
+    </div>
+  </main>
+
+  <footer>
+    <p>Go to <a href="index.html">Main</a></p>
+    <p>Contact <a href="#">here</a></p>
+    <p class="copyright">2024 | &copy Gaganjot Kaur | Blog Website</p>
+  </footer>
+
+
+
+
+
+  <!-- <script>
+    document.getElementsByClassName("main-btn").onclick = function() {
+        document.getElementsByClassName("subscribe-col").style.visibility = "visible";
+    };
+  </script> -->
+  <script src="script.js"></script>
+
+</body>
+</html>
